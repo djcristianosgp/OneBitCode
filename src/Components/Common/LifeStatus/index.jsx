@@ -1,16 +1,17 @@
-import { View, StyleSheet } from "react-native";
 import React from "react";
+import { View, StyleSheet } from "react-native";
 
 import Lottie from "lottie-react-native";
 
 export default function LifeStatus() {
-  /* Status:
-    100- Máximo
-    50 - Médio
-    25 - Baixo
-    00 - Curto (Acabou o game)
-    No robô, consideramos primeiro Felicidade e depois Saúde xx-xx
-   */
+  /*Status:
+   100 - Máximo
+   50 - Médio
+   25 - baixo
+   00 - Curto (Acabou o game)
+   No robô, nós temos primeiros Felicidade e depoisa Saúde xx-xx
+*/
+
   return (
     <View style={styles.container}>
       <Lottie
@@ -25,6 +26,7 @@ export default function LifeStatus() {
         loop
         style={styles.financasAnimacao}
       />
+
       <Lottie
         source={require("../../../assets/robot/robot-100-100.json")}
         autoPlay
@@ -53,8 +55,8 @@ const styles = StyleSheet.create({
   },
   financasAnimacao: {
     width: 100,
-    position: "absolute",
     marginTop: 50,
     marginLeft: 95,
+    position: "absolute",
   },
 });

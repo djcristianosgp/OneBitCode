@@ -1,5 +1,12 @@
 import React from "react";
-import {View, Text, StyleSheet, ScrollView, handleNavHome} from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  handleNavHome,
+  handleSetShowHome,
+} from "react-native";
 import DefaultButton from "../../Components/Common/DefaultButton";
 import ExplanationCard from "../../Components/Explanation/ExplanationCard";
 import { useNavigation } from "@react-navigation/native";

@@ -1,51 +1,55 @@
-import { View, Text, StyleSheet, Image } from "react-native";
 import React from "react";
+import { View, Text, StyleSheet, Image } from "react-native";
 
-export default function ExplanationCard() {
+export default function ExplationCard() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
         Através deste APP você vai consolidar {"\n"} 4 hábitos de áreas
         fundamentais:
       </Text>
+
       <View style={styles.explanationContainer}>
         <Image
           source={require("../../../assets/icons/educationIcon.png")}
           style={styles.icon}
         />
         <Text style={styles.description}>
-          <Text style={styles.mind}>Mente:</Text> Hábitos para melhorar sua
+          <Text style={styles.mind}>Mente: </Text> Hábitos para melhorar sua
           inteligência/sabedoria
         </Text>
       </View>
+
       <View style={styles.explanationContainer}>
         <Image
           source={require("../../../assets/icons/moneyIcon.png")}
           style={styles.icon}
         />
         <Text style={styles.description}>
-          <Text style={styles.money}>Financeiro:</Text> Hábitos para te ajudar
+          <Text style={styles.money}>Financeiro: </Text> Hábitos para te ajudar
           com controle financeiro
         </Text>
       </View>
+
       <View style={styles.explanationContainer}>
         <Image
           source={require("../../../assets/icons/bodyIcon.png")}
           style={styles.icon}
         />
         <Text style={styles.description}>
-          <Text style={styles.body}>Corpo:</Text> Hábitos para deixar te deixar
+          <Text style={styles.body}>Corpo: </Text> Hábitos para te deixar
           {"\n"}
           mais saudável e forte.
         </Text>
       </View>
+
       <View style={styles.explanationContainer}>
         <Image
           source={require("../../../assets/icons/funIcon.png")}
           style={styles.icon}
         />
         <Text style={styles.description}>
-          <Text style={styles.humor}>Humor:</Text> Hábitos para controlar o
+          <Text style={styles.fun}>Humor: </Text> Hábitos para controlar o
           stress {"\n"}e aumentar felicidade
         </Text>
       </View>
@@ -60,6 +64,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     padding: 30,
   },
+
   title: {
     fontWeight: "bold",
     color: "white",
@@ -70,6 +75,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     marginTop: 30,
   },
+
   icon: {
     width: 40,
     height: 40,
@@ -83,11 +89,11 @@ const styles = StyleSheet.create({
     color: "#85BB65",
     fontWeight: "bold",
   },
-	body: {
+  body: {
     color: "#FF0044",
     fontWeight: "bold",
   },
-  humor: {
+  fun: {
     color: "#FE7F23",
     fontWeight: "bold",
   },
