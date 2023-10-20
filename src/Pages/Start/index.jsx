@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     height: 60,
     marginTop: 60,
     marginBottom: 20,
+    resizeMode: 'full'
   },
   description: {
     color: "#FFFFFF",
